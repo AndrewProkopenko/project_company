@@ -1,0 +1,33 @@
+html, body { 
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 500;
+    height: 100%;
+    background: #fff;
+    // font-family: 'Open Sans', sans-serif;
+}
+
+$enable-responsive-font-sizes: true; 
+
+$coral: #F7654A;
+
+.section {
+    background: #fff;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    h2 { 
+        font-family: Oswald;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 53px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #404149;
+        // margin-bottom: 60px;
+    }
+}
+
+#china { 
+    font-family: 'chinacyrregular' !important;
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

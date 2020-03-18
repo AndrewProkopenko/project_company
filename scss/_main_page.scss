@@ -1,0 +1,153 @@
+.main-page-bg { 
+    background-image: url(../img/main_page.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 750px;
+    max-height: 750px;
+}
+.header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.menu ul { 
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu li { 
+    list-style: none;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    display: none;
+} 
+.menu li a { 
+    white-space: nowrap;
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+#burger  { 
+    padding: 10px;
+    background: $coral;
+    color: #fff;
+    border-radius: 0px;
+    transition: 300ms ease;
+    border: none;
+    display: inline-block;
+} 
+.burger-add  { 
+    border-radius: 50% !important;
+    background: #fff !important;
+    color: $coral !important;
+}
+
+.header-menu .menu {   
+    color: #fff;
+}
+
+.main-page-bg h1 { 
+    color: #fff;  
+    margin-top: 100px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 64px;
+    
+    line-height: 90px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.main-page-bg h1+p { 
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+.main-page-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-page-years-block { 
+    width: 100%;
+    min-height: 300px;
+    background: #F7F7F7;
+    transform: translateY(150px);
+    box-shadow: #00000020 5px 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.years-subitem { 
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+
+}
+.years-item { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // min-width: 18%;
+    height: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    span  {
+        white-space: nowrap;
+        &:first-child { 
+            font-size: 72px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $coral;
+        }
+        &:nth-child(2) { 
+            font-size: 36px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        &:last-child  { 
+            font-size: 18px;
+            line-height: 27px;
+            color: #999999;
+        }
+    }
+}
+@media screen and (max-width: 992px) { 
+    h1 { 
+        font-size: calc(2rem + 1.5vw) !important;
+        line-height: 60px !important;
+    }
+    .main-page-years-block { 
+        flex-direction: column;
+
+    }
+}
+@media screen and (max-width: 500px) { 
+    .years-item { 
+        span { 
+            &:first-child { 
+                font-size: 50px;
+               
+            }
+            &:nth-child(2) { 
+                font-size: 22px;
+            }
+            &:last-child  { 
+                font-size: 16px;
+            }
+        }
+     }
+} 
